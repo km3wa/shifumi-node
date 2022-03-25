@@ -114,7 +114,7 @@ io.on("connection", (socket) => {
         break;
 
       default:
-        socket.emit('output', 'incorrect input. try another input.');
+        socket.emit('output', 'incorrect input. try rock, paper or scissors.');
         break;
     }
     /*console.log(msg + ' ' + socket.id)
