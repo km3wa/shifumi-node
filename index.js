@@ -42,7 +42,7 @@ const server = (req, res) => {
     res.writeHead(200, {
       "Content-Type": "text/html;charset=utf8",
     });
-    const home = readFileSync('./views/index.html', 'utf-8');
+    const home = readFileSync('./index.html', 'utf-8');
     res.write(home)
     res.end();
   }  
